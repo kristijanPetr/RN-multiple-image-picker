@@ -2,7 +2,8 @@
 
 ### Expo solution working on Android and IOS
 
-![Screenshot](https://github.com/kristijanPetr/RN-multiple-image-picker/raw/master/images/android-screenshot.png)
+![Screenshot](https://github.com/kristijanPetr/RN-multiple-image-picker/raw/master/images/android.png)
+![Screenshot](https://github.com/kristijanPetr/RN-multiple-image-picker/raw/master/images/ios.png)
 
 ## Installation
 
