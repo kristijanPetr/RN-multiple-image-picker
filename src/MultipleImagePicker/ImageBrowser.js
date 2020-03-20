@@ -3,12 +3,13 @@ import {
   StyleSheet,
   Text,
   View,
-  CameraRoll,
   FlatList,
   Dimensions,
   TouchableOpacity,
 } from 'react-native';
 import ImageTile from './ImageTile';
+import * as MediaLibrary from 'expo-media-library';
+
 const { width } = Dimensions.get('window');
 
 type Props = {
@@ -48,30 +49,25 @@ class ImageBrowser extends Component<Props> {
   getPhotos = () => {
     let params = {
       first: 50,
-      mimeTypes: ['image/jpeg', 'image/png'],
-      assetType: 'Photos',
     };
     if (this.state.after) params.after = this.state.after;
     if (!this.state.has_next_page) return;
-    CameraRoll.getPhotos(params).then(this.processPhotos);
+    MediaLibrary.getAssetsAsync(params).then(this.processPhotos);
   };
 
   processPhotos = r => {
-    console.log('photos', r);
-    if (this.state.after === r.page_info.end_cursor) return;
-    let uris = r.edges
-      .map(i => i.node)
-      .map(i => {
-        return {
-          ...i.image,
-          type: i.type,
-        };
-      });
+    if (this.state.after === r.endCursor) return;
+    let uris = r.assets.map(i => {
+      return {
+        uri: i.uri,
+        type: i.mediaType,
+      };
+    });
 
     this.setState({
       photos: [...this.state.photos, ...uris],
-      after: r.page_info.end_cursor,
-      has_next_page: r.page_info.has_next_page,
+      after: r.endCursor,
+      has_next_page: r.hasNextPage,
     });
   };
 
