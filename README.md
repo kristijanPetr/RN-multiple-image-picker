@@ -7,7 +7,7 @@
 
 ## Installation
 
-- `yarn add expo-multiple-media-picker`
+- `yarn add rn-multiple-image-picker`
 
 ## Usage
 
