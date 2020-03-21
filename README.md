@@ -23,7 +23,11 @@
 
 ## Running example
 
-- `cd example && expo start`
+```bash
+cd example
+yarn
+expo start
+```
 
 ## Props
 
