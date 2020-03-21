@@ -7,8 +7,23 @@
 
 ## Installation
 
-- `npm install`
-- `expo start`
+- `yarn add expo-multiple-media-picker`
+
+## Usage
+
+```jsx
+{this.state.imageBrowser ? (
+    <ImageBrowser
+        onRequestClose={this.toggleModal}
+        pickedImages={this.handleImages}
+    />
+)}
+
+```
+
+## Running example
+
+- `cd example && expo start`
 
 ## Props
 
