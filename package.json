@@ -4,6 +4,16 @@
   "main": "src/index.js",
   "version": "2.0.0",
   "repository": "https://github.com/kristijanPetr/expo-multiple-media-picker",
+  "author": {
+    "name": "Kristijan Petrovski",
+    "url": "https://github.com/kristijanPetr"
+  },
+  "contributors": [
+    {
+      "name": "Douglas Rodrigues Guimarães",
+      "url": "https://github.com/douglasrodrigues5"
+    }
+  ],
   "dependencies": {
     "expo-media-library": "^8.0.0",
     "react": "16.9.0",
