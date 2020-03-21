@@ -13,7 +13,7 @@
   "dependencies": {
     "expo": "^36.0.0",
     "expo-media-library": "^8.0.0",
-    "expo-multiple-media-picker": "file:.yalc/expo-multiple-media-picker",
+    "expo-multiple-media-picker": "^2.0.0",
     "expo-permissions": "~8.0.0",
     "react": "16.9.0",
     "react-dom": "^16.9.0",

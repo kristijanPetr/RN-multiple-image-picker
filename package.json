@@ -1,6 +1,6 @@
 {
-  "name": "expo-multiple-media-picker",
-  "description": "A multiple media picker component for Expo",
+  "name": "rn-multiple-image-picker",
+  "description": "A multiple image picker component for Expo",
   "main": "src/index.js",
   "version": "2.0.0",
   "repository": "https://github.com/kristijanPetr/RN-multiple-image-picker",
