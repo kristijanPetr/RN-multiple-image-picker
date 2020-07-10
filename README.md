@@ -7,8 +7,27 @@
 
 ## Installation
 
-- `npm install`
-- `expo start`
+- `yarn add rn-multiple-image-picker`
+
+## Usage
+
+```jsx
+{this.state.imageBrowser ? (
+    <ImageBrowser
+        onRequestClose={this.toggleModal}
+        pickedImages={this.handleImages}
+    />
+)}
+
+```
+
+## Running example
+
+```bash
+cd example
+yarn
+expo start
+```
 
 ## Props
 

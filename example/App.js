@@ -9,7 +9,7 @@ import {
   Animated,
 } from 'react-native';
 import * as Permissions from 'expo-permissions';
-import ImageBrowser from './src/MultipleImagePicker/ImageBrowser';
+import ImageBrowser from 'rn-multiple-image-picker';
 
 const { height } = Dimensions.get('screen');
 
